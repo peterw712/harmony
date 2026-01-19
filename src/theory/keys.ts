@@ -1,5 +1,5 @@
 import type { Key, Mode, Note, ScaleType } from './types'
-import { LETTERS, makeNote, parseNoteName, transposeByInterval } from './notes'
+import { makeNote, parseNoteName, transposeByInterval } from './notes'
 
 const MAJOR_INTERVALS = [0, 2, 4, 5, 7, 9, 11]
 const NAT_MINOR_INTERVALS = [0, 2, 3, 5, 7, 8, 10]
