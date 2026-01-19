@@ -25,7 +25,6 @@ const intervalsForScale = (scaleType: ScaleType): number[] => {
 
 export const buildScale = (tonic: Note, scaleType: ScaleType): Note[] => {
   const intervals = intervalsForScale(scaleType)
-  const startIndex = LETTERS.indexOf(tonic.letter)
   return intervals.map((interval, degreeIndex) =>
     transposeByInterval(tonic, degreeIndex, interval),
   )
